@@ -1,6 +1,13 @@
 #include "../include/Store.h"
+#include "../include/dotenv.h"
 
-int main() {
+#include <iostream>
+
+using std::cout;
+
+int main()
+{
+    load_env();
     Store store;
     store.run();
     return 0;

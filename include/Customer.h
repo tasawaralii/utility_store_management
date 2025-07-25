@@ -5,9 +5,11 @@ using std::string;
 
 class Customer {
 public:
-    Customer(const string& name);
+    Customer(const string& name, const string& cnic)
+        : name(name), CNIC(cnic) {};
 
     private:
-    std::string name;
+    string name;
+    string CNIC;
 
 };
